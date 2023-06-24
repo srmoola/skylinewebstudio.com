@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="icon" type="image/x-icon" href="images/skylinenewlogo.png">
+  <title>Skyline Web Studio Get Started</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("BgO0nF3MBZZeDeshV");
+    })();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="navbar" class="navbar">
+    <div class="logocontainer">
+      <div class="logo">
+        <img class="logoimage" src="images/logocombined.svg">
+      </div>
+    </div>
+    <div class="optionscontainer">
+      <div class="options">
+        <a href="index.html">
+          <div class="navdesk">
+            <div class="navtext">Home</div>
+          </div>
+        </a>
+        <a href="ourwork.html">
+          <div class="navdesk">
+            <div class="navtext">Our Work</div>
+          </div>
+        </a>
+        <a href="ourteam.html">
+          <div class="navdesk">
+            <div class="navtext">About Us</div>
+          </div>
+        </a>
+      </div>
+      <div class="mobilemenu">
+        <button onclick="openMenu();" class="button-one" aria-controls="primary-navigation" aria-expanded="false">
+          <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="100">
+            <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+            </rect>
+            <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+            </rect>
+            <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+            </rect>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="menu" class="menumobile">
+    <div class="mobileoptions">
+      <a href="index.html">
+        <div class="mobileoption">Home</div>
+      </a>
+      <a href="ourteam.html">
+        <div class="mobileoption">About Us</div>
+      </a>
+      <a href="contact.html">
+        <div class="mobileoption">Get Started</div>
+      </a>
+    </div>
+    <lottie-player class="mobilemenuimage" src="https://assets5.lottiefiles.com/packages/lf20_BKm13KMWgV.json"
+      background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
+  </div>
+
+  <div id="formcontainer" class="formcontainer">
+    <div id="formcontainer">
+      <h1 class="formheader">WORK WITH US</h1>
+      <form action="#" method="post" id="contact_form">
+        <div class="name">
+          <input type="text" placeholder="Name" name="name" id="name" required>
+        </div>
+        <div class="email">
+  
+          <input type="email" placeholder="Email" name="email" id="email" required>
+        </div>
+        <div class="telephone">
+  
+          <input type="number" placeholder="Phone Number" name="telephone" id="telephone" required>
+        </div>
+        <div class="subject">
+  
+          <input type="text" placeholder="Subject Line" name="subject" id="subject" required>
+        </div>
+        <div class="message">
+  
+          <textarea name="message" placeholder="I'd like to chat about" id="message" cols="30" rows="5"
+            required></textarea>
+        </div>
+  
+        <input type="button" value="Send Message" id="form_button" />
+      </form>
+    </div>
+    </div>
+
+    <div id="tycontainer" class="tycontainer">
+      <div class="lottieimage">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_dd9wpbrh.json" background="transparent"
+              speed="1" style="width: 100%;" loop autoplay></lottie-player>
+      </div>
+      <div class="messagereceived">
+          <h1>Thank you, We received your message!</h1>
+      </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script async src="scripts/email.js"></script>
+  <script async src="scripts/scripts.js"></script>
+  <script async src="scripts/animations.js"></script>
+
+</body>
+
+</html>

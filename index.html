@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/skylinenewlogo.png">
+    <title>Skyline Web Studio</title>
+</head>
+
+<body>
+
+    <div id="navbar" class="navbar">
+        <div class="logocontainer">
+            <div class="logo">
+                <img class="logoimage" src="images/logocombined.svg">
+            </div>
+        </div>
+        <div class="optionscontainer">
+            <div class="options">
+                <a href="ourwork.html">
+                    <div class="navdesk">
+                        <div class="navtext">Our Work</div>
+                    </div>
+                </a>
+                <a href="ourteam.html">
+                    <div class="navdesk">
+                        <div class="navtext">About Us</div>
+                    </div>
+                </a>
+                <a href="contact.html">
+                    <div class="navdesk">
+                        <div class="navtext">Get Started</div>
+                    </div>
+                </a>
+            </div>
+            <div class="mobilemenu">
+                <button onclick="openMenu();" class="button-one" aria-controls="primary-navigation"
+                    aria-expanded="false">
+                    <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="100">
+                        <rect class="line top" width="80" height="10" x="10" y="25" rx="5">
+                        </rect>
+                        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5">
+                        </rect>
+                        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5">
+                        </rect>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="menumobile">
+        <div class="mobileoptions">
+            <a href="ourwork.html">
+                <div class="mobileoption">Our Work</div>
+            </a>
+            <a href="ourteam.html">
+                <div class="mobileoption">About Us</div>
+            </a>
+            <a href="contact.html">
+                <div class="mobileoption">Get Started</div>
+            </a>
+        </div>
+        <lottie-player class="mobilemenuimage" src="https://assets5.lottiefiles.com/packages/lf20_BKm13KMWgV.json"
+            background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></lottie-player>
+    </div>
+
+
+    <div id="main" class="main">
+        <div class="content">
+            <h1><span class="lineargrad"> Digital Solutions</span> for Small Businesses
+                <span class="lineargrad">and</span> Non-Profits
+            </h1>
+            <h2>Skyline provides low-cost Web Services for any organization.</h2>
+            <div class="container">
+                <a href="contact.html" class="button">
+                    <div class="button__line"></div>
+                    <div class="button__line"></div>
+                    <span class="button__text">Book Now&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="heroimage">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_mjr11zfo.json" class="mainimage removeimg"
+                background="transparent" speed="0.5" style="width: 900px; height: 900px;" loop autoplay></lottie-player>
+        </div>
+    </div>
+
+    <div id="wavecontainer" class="wavescontainer">
+        <div class="footer topper">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+        </div>
+        <div class="footer topper rotate">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second">
+        <h1 class="sectionheaders">HOW <span class="lineargrad">WE</span> SUPPORT YOUR <span
+                class="lineargrad">DIGITAL</span> GOALS</h1>
+        <div id="boxcontainer" class="boxcontainer"></div>
+    </div>
+
+    <div class="third">
+        <div class="textcontainer">
+            <h1 class="thirdheader">Digitalized <span class="lineargrad">Growth</span>. Personalized for <span
+                    class="lineargrad">You</span>.</h1>
+        </div>
+        <div class="cardcontainer">
+            <div class="card">
+                <img src="images/guidance.png" class="cardimage">
+                <h3>Digital Guidance</h3>
+                <h4>We'll help you chart through the complexities of web design, development, and
+                    marketing.</h4>
+            </div>
+            <div class="card">
+                <img src="images/time.png" class="cardimage">
+                <h3>Efficient Solutions</h3>
+                <h4>Time is precious in this fast-paced world, which is why we're committed to providing you with fast
+                    solutions.</h4>
+            </div>
+            <div class="card">
+                <img src="images/personal.png" class="cardimage">
+                <h3>Just for You</h3>
+                <h4>Everyone wants attention, which is why we offer personalized services that fit your needs exactly.
+                </h4>
+            </div>
+        </div>
+
+        <div class="secondcta">
+            <div class="secondctacontainer">
+                <div class="secondctacontent">
+                    <div class="secondctatext">
+                        <h1 class="secondctatext">What are you waiting for?</h1>
+                    </div>
+                    <div class="secondctatext">
+                        <h2>Personalized approach, Digital Success, and Efficient — What more could you want? Contact
+                            our team to get started.</h2>
+                    </div>
+                    <div class="secondctabutton">
+                        <div class="container pushup">
+
+                            <a href="contact.html" class="button extend">
+                                <div class="button__line"></div>
+                                <div class="button__line"></div>
+                                <span class="button__text">Become a Client&nbsp;<i
+                                        class="fa-solid fa-arrow-right"></i></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="ctaimagecontainer">
+                    <lottie-player class="ctaimage removeimg"
+                        src="https://assets1.lottiefiles.com/packages/lf20_G2nVPR715x.json" background="transparent"
+                        speed="0.5" style="width: 650px; height: 650px;" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="ourteam.html">About Us</a></li>
+            <li class="menu__item"><a class="menu__link" href="ourwork.html">Our Work</a></li>
+            <li class="menu__item"><a class="menu__link" href="ourteam.html">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2023 Skyline Web Studio | All Rights Reserved</p>
+    </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script async src="scripts/add.js"></script>
+    <script async src="scripts/query.js"></script>
+    <script async src="scripts/scripts.js"></script>
+    <script async src="scripts/animations.js"></script>
+</body>
+
+</html>
