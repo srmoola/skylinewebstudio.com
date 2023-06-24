@@ -555,33 +555,46 @@ button {
     border: none;
     z-index: 2;
     display: none;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
     transform: scale(0.5);
-}
-
-.button-one .line {
-    transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
-    transform-origin: center;
-}
-
-.button-one[aria-expanded="true"] .line {
-    transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
-}
-
-.button-one[aria-expanded="true"] :is(.top, .bottom) {
-    y: 45;
-}
-
-.button-one[aria-expanded="true"] .top {
-    rotate: 45deg;
-}
-
-.button-one[aria-expanded="true"] .middle {
+  }
+  
+  .button-one .line {
+    -webkit-transition: -webkit-transform 300ms ease-in 300ms, transform 300ms ease-in, opacity 0ms 300ms;
+    transition: -webkit-transform 300ms ease-in 300ms, transform 300ms ease-in, opacity 0ms 300ms;
+    transition: transform 300ms ease-in 300ms, opacity 0ms 300ms;
+    transform-origin: center center;
+  }
+  
+  .button-one[aria-expanded="true"] .line {
+    -webkit-transition: -webkit-transform 300ms ease-in, transform 300ms ease-in 300ms, opacity 0ms 300ms;
+    transition: -webkit-transform 300ms ease-in, transform 300ms ease-in 300ms, opacity 0ms 300ms;
+    transition: transform 300ms ease-in, opacity 0ms 300ms;
+  }
+  
+  .button-one[aria-expanded="true"] :is(.top, .bottom) {
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(45px);
+  }
+  
+  .button-one[aria-expanded="true"] .top {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .button-one[aria-expanded="true"] .middle {
     opacity: 0;
-}
-
-.button-one[aria-expanded="true"] .bottom {
-    rotate: -45deg;
-}
+  }
+  
+  .button-one[aria-expanded="true"] .bottom {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
 
 .mobilemenu {
     width: fit-content;
